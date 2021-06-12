@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/it_list"
+        android:title="Danh sách"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/it_calendar"
+        android:title="Lịch"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/it_weather"
+        android:title="Thời tiết"
+        android:icon="@drawable/ic_baseline_wb_twilight_24"
+        app:showAsAction="never"
+        />
+</menu>

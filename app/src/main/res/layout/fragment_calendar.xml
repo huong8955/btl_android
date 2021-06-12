@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B2DFDB"
+    tools:context=".CalendarFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8/6/2021"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/month"/>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarBackgroundColor="#FAFAFA"
+        app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+        app:compactCalendarMultiEventIndicatorColor="#FFC400"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="@color/black"
+        app:compactCalendarTextSize="12sp" />
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/listView_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/Page_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:dividerHeight="10.0sp"
+        android:background="#B2DFDB"
+        />
+</LinearLayout>
